@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Fraunces', serif;
+    min-height: 1500px;
+}
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 15px;   
+}
+.row {
+    display: grid;    
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 10px;
+    margin: 0 -15px;
+}
+.header-row {
+    padding-bottom: 10px;
+}
+.main-row {
+    display: grid;
+    grid-template-columns: 1fr;    
+    row-gap: 20px;
+    padding: 0 15px;    
+}
+.second-flor {
+    grid-column: 1 / 3; 
+    grid-row: 2;   
+}
+.second-flor-2 {
+    grid-column: 2 / 4; 
+    grid-row: 2;   
+}
+.second-flor-3 {
+    grid-column: 3 / 5; 
+    grid-row: 2;   
+}
+.block-search {
+    display: grid;
+    grid-template-columns: 100px 30px;
+    grid-template-rows: 30px;
+    padding: 5px;
+    border: whitesmoke 2px solid;
+}
+.stars {
+    grid-row: 2;
+}
+.stars-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+[class*=star-blocks-] {
+    display: inline-grid;
+    grid-template-columns: 181px;
+    grid-template-rows: 240px 135px 7px;
+    row-gap: 10px;
+}
+[class*="news-"]{
+    display: grid;    
+    grid-template-rows: repeat(6, auto);     
+}
+.news-1 {
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: auto;
+}
+.news-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 150px;
+    justify-content: center;
+    grid-row-gap: 4px;
+}
+.news-3 {
+    grid-template-columns: 120px 1fr;
+    background-position: initial;
+}
+.news-4 {
+    grid-template-rows: 130px 40px;
+}
+.news-5 {
+    grid-template-rows: 150px;
+}
+.title-style {
+    font-size: 17px;
+}
+.fashion-block {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+.fashion-text {
+    font-size: 14px;
+    padding: 10px 0;
+}
+.title {
+    font-size: 16px;
+    align-self: center;
+    line-height: 1.4;    
+}
+.item-news img {
+    width: 100%;
+    height: 300px;    
+}
+[class*="block-f-"] {
+    display: grid;       
+}
+.footer-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25px 110px 60px;
+    padding: 10px 5px;    
+    color: whitesmoke;    
+}
+.footer-row a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer-background {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 90px 20px;    
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;  
+}
+.background {
+    background-image: url("img/logo-vogue.png");
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+.footer-soc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 3;
+    grid-gap: 10px;
+    align-self: center;
+}
+@media(min-width:768px) {
+    .container {
+        max-width: 720px;
+    }      
+    .main-row {
+        display: grid;
+        grid-template-columns: 185px 1fr;
+        grid-template-rows: repeat(3, auto);    
+        row-gap: 50px;    
+    } 
+    [class*=star-blocks-] {
+        row-gap: 10px;
+        grid-template-rows: 240px 135px 7px;
+    }   
+    .stars {
+        grid-row: 1/-1;
+    }
+    .item-news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);        
+    }
+    .news-1 {
+        grid-template-columns: 1fr 100px;
+        grid-template-rows: auto;
+    } 
+    .news-2 {
+        grid-template-rows: 40px 156px;
+    }   
+    .news-3 {    
+        grid-row: 2;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 300px;
+        justify-content: start;        
+    }
+    .news-4 {    
+        grid-template-rows: 1fr 45px;
+        grid-row: 1;  
+        grid-column: 2;      
+    }
+    .news-5 {
+        grid-column: 2;
+        grid-row: 3; 
+        grid-template-rows: 200px;      
+    }
+    .news-6 {    
+        grid-row: 2;
+        grid-column: 1;
+        cursor: pointer;
+    }
+    .fashion-block {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 259px);
+    } 
+    .block-f-1 {
+        grid-template-columns: auto 185px;
+        grid-column: 1/-1;
+    }
+    .block-f-2 {
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1;    
+    }
+    .block-f-3 {
+        grid-template-columns: 1fr 1fr;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .block-f-4 {
+        grid-template-columns: 150px auto;
+        grid-column: 1/-1;    
+    }  
+    .footer-row {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 120px;        
+    }
+    .footer-background {
+        grid-template-columns: 300px;
+        grid-template-rows: 100px 20px;   
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .footer-soc {
+        grid-template-columns: repeat(4, 1fr);
+        grid-row: 1;
+        grid-column: 3;
+    }   
+}
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+    [class*=star-blocks-] {
+        row-gap: 12px;
+    }
+    .item-news {
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: 200px 250px;
+    }
+    .title-style {
+        font-size: 20px;
+    }
+    .news-2 {
+        grid-template-rows: 40px 1fr;
+        justify-content: center;
+        grid-row-gap: 4px;
+    }
+    .news-3 {    
+        grid-row: 1/3;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        justify-content: start;        
+    }  
+    .news-4 {
+        grid-row: 3;
+        grid-column: 1/3;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 35px; 
+    }
+    .news-5 {    
+        grid-column: 1/3;
+        grid-row: 2;           
+        grid-template-rows: 100px;
+        cursor: pointer;
+    }
+    .news-6 {
+        grid-row: 3;
+        grid-column: 3/4;
+    }
+    .item-news img {
+        height: 357px;    
+    }
+    .fashion-block {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 230px);
+    }
+    .fashion-text {
+        font-size: 15px;
+        padding: 15px 0;
+    }
+    .block-f-1 {
+        grid-template-columns: 1fr 155px;
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+    .block-f-2 {
+        grid-template-columns: 150px auto;
+        grid-column: 1;    
+    }
+    .block-f-3 {
+        grid-template-columns: 195px auto;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .block-f-4 {
+        grid-template-columns: 250px auto;
+        grid-column: 1/-1;    
+    }
+}
+@media(min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }    
+    [class*=star-blocks-] {
+        grid-template-columns: 190px;
+        grid-template-rows: 250px 147px 7px;
+    } 
+    .item-news {        
+        grid-template-columns: repeat(3, 295px);
+        grid-template-rows: 270px 310px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .man-text {
+        font-size: 20px;
+    }
+    .title-style {
+        font-size: 25px;
+    }
+    .fashion-block {
+        grid-template-columns: repeat(2, 1fr);  
+        grid-template-rows: repeat(3, 223px);             
+    }    
+    .block-f-1 {
+        grid-template-columns: 635px 225px;
+        grid-row: 1;
+        grid-column: 1/-1;        
+    }
+    .block-f-2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .block-f-3 {
+        grid-column: 2;
+        grid-row: 2;
+        grid-template-columns: 285px 150px;
+    }
+    .block-f-4 {
+        grid-template-columns: 250px auto;
+        grid-template-rows: 220px;
+        grid-column: 1/-1;    
+    }
+    .news-3 {
+        background-position: center;
+    }
+}
+@media(min-width:1340px) {
+    .container {
+        max-width: 1280px;
+    }
+    .header-row {    
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows:auto;
+    }
+    nav {       
+        display: grid;
+        grid-template-columns: repeat(3, 120px) 150px;
+        grid-template-rows: [row1-start] 30px [row1-end] 30px;
+        gap: 15px;            
+    } 
+    [class*=star-blocks-]  {
+        grid-template-rows: 204px 133px 7px;
+    }  
+    .item-news {
+        display: grid;
+        grid-template-columns: repeat(4 ,1fr);
+        grid-template-rows: 300px 360px;
+    }
+    .news-4 {
+        grid-row: 1;
+        grid-column: 4;       
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 45px;       
+    }
+    .news-6 {
+        grid-row: 2;
+        grid-column: 4;
+    }
+    .fashion-block {
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: 190px 190px auto;
+    }
+    .fashion-text {
+        font-size: 20px;
+        padding: 30px 0;
+    }
+    .block-f-1 {
+        grid-template-columns: 365px 185px;
+        grid-row: 1/3;
+        grid-column: 1/3;        
+    }
+    .block-f-2 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .block-f-3 {
+        grid-column: 3;
+        grid-row: 2;
+        grid-template-columns: 285px 150px;
+    }
+    .block-f-4 {
+        grid-template-rows: 270px;
+    }
+}
+
+/*only mobile*/
+@media(max-width:668px) {
+    .header-row {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+    }
+    .logo {
+        grid-column: 1/-1;        
+    }
+    .menu {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .block-search {
+        grid-template-columns: 85px 25px;
+        grid-template-rows: 23px;
+        padding: 2px;        
+    }
+    .search {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .menu {
+        display: none;
+    }
+    .item-news {
+        row-gap: 10px;
+    }
+    .title-style {
+        font-size: 15px;
+        padding: 24px;
+    }
+    [class*=star-blocks-] {
+        display: inline-grid;
+        grid-template-columns: 286px;
+        grid-template-rows: 240px 105px 7px;
+        row-gap: 10px;
+    }
+    .block-f-1 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .block-f-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .block-f-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .block-f-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-text {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-column-gap: 10px;
+        padding: 5px 0;
+    }
+}
