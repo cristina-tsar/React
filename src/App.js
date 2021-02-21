@@ -1,5 +1,5 @@
 import React from 'react'
-import "./common/styles.css";
+import "./common/style.css";
 import "./common/reset.css";
 import "./common/grid.css";
 

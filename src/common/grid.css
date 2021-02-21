@@ -129,7 +129,7 @@ body {
     text-align: center;  
 }
 .background {
-    background-image: url("img/logo-vogue.png");
+    background-image: url(logo-vogue.png);
     background-position: center;
     background-repeat: no-repeat;    
 }

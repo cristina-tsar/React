@@ -1,9 +1,9 @@
 import React from "react";
 
-const TopArticleItem = ({ image, title }) => {
+const TopArticleItem = ({ image, title, className }) => {
   return (
     <>
-      <div className="new-block-1">
+      <div className={className}>
         <img src={image} alt="" />
       </div>
       <a className="title">{title}</a>

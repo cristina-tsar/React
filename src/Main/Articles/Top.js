@@ -5,9 +5,9 @@ import tops from "./tops";
 const Top = () => {
   return (
     <div class="item-news">
-      {tops.map(({ id, image, title }) => (
+      {tops.map(({ id, image, title, className }) => (
         <>
-          <div className="news-1 fashion" key={id}>
+          <div className={className} key={id}>
             <TopArticleItem image={image} title={title} />
           </div>
         </>

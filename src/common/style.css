@@ -37,14 +37,14 @@ nav a:hover {
 }
 .icon-search {   
     border: none;
-    background-image: url("img/icon-search-30.png");
+    background-image: url(iconsearch.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
 }
 .main {
     background-color: whitesmoke;
-    background-image: url("img/diament.png");
+    background-image: url(diament.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,12 +83,6 @@ h1 {
    filter: grayscale(90%);
    transform: scale(1.03);
 }
-.new-block-1 {
-    background-image: url(img/fashion\ week.jpg);
-}
-.new-block-2 {
-    background-image: url("img/manfashion.jpg");    
-}
 .man-text {
     font-size: 17px;
     text-align: center;
@@ -96,17 +90,11 @@ h1 {
     border-top: palevioletred 1px solid;
     border-bottom: palevioletred 1px solid;    
 }
-.new-block-3 {
-    background-image: url("img/mirandastyle-1.jpg");
-}
-.new-block-4 {
-    background-image: url("img/makeup.png");
-}
 .news-6 {  
     cursor: pointer;
 }
 .news-5 {
-    background-image: url("img/EmmaCorin.jpeg");    
+    background-color: rgb(255, 196, 230);    
     justify-content: end;
     background-repeat: no-repeat;
     background-position: center;
@@ -152,26 +140,6 @@ h1 {
     opacity: 0.8;  
     transition: #a7a6a665 0.7s ease-in-out;  
 }
-[class*="photo-star-"] {    
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-color: whitesmoke;       
-}
-.photo-star-GalGadot {
-    background-image: url("img/GalGadot.png");
-}
-.photo-star-DiCaprio {
-    background-image: url("img/DiCaprio.png");
-}
-.photo-star-LadyGaga {
-    background-image: url("img/LadyGaga.png");
-}
-.photo-star-BrunoMars {
-    background-image: url("img/BrunoMars.png");
-}
-.photo-star-AdrianaLima {
-    background-image: url("img/lima.png");
-}
 .star-title {
     font-size: 23px;
     padding: 19px 0;
@@ -205,18 +173,6 @@ h1 {
     background-repeat: no-repeat;
     transition: 2s ease-in-out 0s; 
 }
-.fashion-photo-1 {
-    background-image: url("img/sexist.jpg");
-}
-.fashion-photo-2 {
-    background-image: url("img/CamilleMiceliHome.jpg");
-}
-.fashion-photo-3 {
-    background-image: url("img/Fendi_KM.jpg");
-}
-.fashion-photo-4 {
-    background-image: url("img/RichWomen.jpg" );
-}
 .fashion-block {  
     padding: 10px;
     border: palevioletred 2px solid;
@@ -243,7 +199,7 @@ h1 {
     color:#858383f1; 
 }
 .slider {
-    background-image: url("img/Tiffany+&+Co.jpg");
+    background-color: chartreuse;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
