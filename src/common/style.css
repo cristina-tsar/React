@@ -48,6 +48,7 @@ nav a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 30px;
 }
 h1 {
     font-size: 31px;
@@ -62,44 +63,30 @@ h1 {
     padding: 10px;
 }
 [class*="new-"] {
-    background-repeat: no-repeat;
-    background-position: center;    
-    background-size: cover; 
-    transition: 1.5s ease-in-out 0s;   
+    transition: 1s ease-in-out;
+}
+[class*="news-"]:hover, .block-f-1:hover {
+    filter: grayscale(90%);
+    transition: 1s ease-in-out;
+    transform: scale(1.03);
 }
 [class*="news-"] > a {
    cursor: pointer; 
    color:palevioletred;
    border-top: palevioletred 1px solid;
    border-bottom: palevioletred 1px solid; 
-   transition: color 2s ease-in-out;   
+   transition: color 2s ease-in-out; 
+   text-align: center;  
 }
 [class*="news-"]:hover > a {
     color:#8d8b89; 
-    transform: scale(1.05);    
+    transform: scale(1.03);    
     transition: 1.5s ease-in-out 0s;
-}
-[class*="news-"]:hover > [class*="new-"], [class*="block-f-"]:hover > [class*="fashion-photo-"] {
-   filter: grayscale(90%);
-   transform: scale(1.03);
-}
-.man-text {
-    font-size: 17px;
-    text-align: center;
-    color:palevioletred;
-    border-top: palevioletred 1px solid;
-    border-bottom: palevioletred 1px solid;    
 }
 .news-6 {  
     cursor: pointer;
 }
-.news-5 {
-    background-color: rgb(255, 196, 230);    
-    justify-content: end;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    background-size: cover; 
+.news-5, .news-6 {
     transition: 1s ease-in-out;      
 }
 .news-5:hover, .news-6:hover {
@@ -114,18 +101,6 @@ h1 {
     text-align: center;
     border-top: palevioletred 1px solid;
     border-bottom: palevioletred 1px solid;
-}
-.text-makeup {
-    font-size: 17px;
-    text-align: center;
-    line-height: 1.1;
-}
-.text-emma {   
-    font-size: 20px;    
-    padding: 15px 20px 0;
-    color: palevioletred;
-    line-height: 1.2;
-    margin-top: 5px;  
 }
 [class*="star-blocks-"] > .learnmore-btn {
     position: relative;  
@@ -192,7 +167,7 @@ h1 {
 .pad-text {
     padding-left: 20px;      
 }
-[class*="block-f-"]:hover > a {
+.block-f-1:hover > a {
     transform: scale(1);
     font-weight: bold;
     transition: 2s ease-in-out 0s; 
@@ -203,10 +178,9 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
+    width: 289px;
     height: 350px;
 }
 .footer {
-    margin-top: 30px;
     background-color: palevioletred;
 }
