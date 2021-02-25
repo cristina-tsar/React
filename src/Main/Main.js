@@ -1,8 +1,16 @@
 import React from 'react'
+import { Route } from "react-router-dom"
 
 import Top from "./Articles/Top";
 import Stars from "./Articles/Stars";
 import Fashion from "./Articles/Fashion";
+
+import TopPage from "./TopPage/TopPage"
+import FashionPage from "./FashionPage/FashionPage"
+import NewsPage from "./NewsPage/NewsPage"
+import LifestylePage from "./LifeStylePage/LifeStylePage"
+import BeauttyPage from "./BeautyPage/BeautyPage"
+import ExclusivePage from "./ExclusivePage/ExclusivePage"
 
 const Main = () => {
   return (
@@ -10,12 +18,17 @@ const Main = () => {
       <div className="container main-container">
         <div className="row main-row">
           <div className="stars">
-            <h1 className="star-title">...EXCLUSIVE...</h1>
+            <h1>...STARS...</h1>
             <Stars />
           </div>
-          <div className="top-block">
-            <h1>...TOP...</h1>
-            <Top />
+          <div className="top-block">                      
+            <Route path="/" exact render={() => <Top />}/>
+            <Route path="/top" component={TopPage}/>
+            <Route path="/fashion" component={FashionPage}/>
+            <Route path="/news" component={NewsPage}/>
+            <Route path="/lifestyle" component={LifestylePage}/>
+            <Route path="/beauty" component={BeauttyPage}/>
+            <Route path="/exclusive" component={ExclusivePage}/>
           </div>
           <div className="slider-block">
             <div className="slider">
@@ -45,8 +58,7 @@ const Main = () => {
             </div>
           </div>
           <div className="news">
-            <h1>...FASHION...</h1>
-            <Fashion />
+           <Route path="/" exact render={() => <Fashion />} /> 
           </div>
         </div>
       </div>

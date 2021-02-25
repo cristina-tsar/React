@@ -1,22 +1,24 @@
-import React from 'react'
+import React from 'react';
+import {Link} from "react-router-dom";
+
 
 const Menu = () => {
     return (
       <div className="menu">
         <nav>
-          <a href="/">NEWS</a>
-          <a href="/">FASHION</a>
-          <a href="/">STARS</a>
-          <a href="/">LIFE STYLE</a>
-          <a className="second-flor" href="/">
+          <Link to="/">HOME</Link>
+          <Link to="/fashion">FASHION</Link>
+          <Link to="/news">NEWS</Link>
+          <Link to="/lifestyle">LIFE STYLE</Link>
+          <Link to="/beauty" className="second-flor" href="/">
             BEAUTY
-          </a>
-          <a className="second-flor-2" href="/">
+          </Link>
+          <Link to="/top" className="second-flor-2" href="/">
             TOP
-          </a>
-          <a className="second-flor-3" href="/">
+          </Link>
+          <Link to="exclusive" className="second-flor-3" href="/">
             EXCLUSIVE
-          </a>
+          </Link>
         </nav>
       </div>
     );
