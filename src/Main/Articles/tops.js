@@ -47,6 +47,12 @@ const tops = [
       fullDescription:""
     }
 ];
+  export const getTopsObject = array => {
+    return array.reduce((obj,top) => ({
+        ...obj,
+        [top.id]:top
+    }),{})
+  }
   
 export default tops;
   

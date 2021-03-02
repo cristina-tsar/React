@@ -1,4 +1,4 @@
-const starsblock = [
+const starblocks = [
     {
       id: 1,
       name: " GAL GADOT",
@@ -40,5 +40,12 @@ const starsblock = [
       fullDescription:""
     }
   ];
-  export default starsblock;
+
+  export const getStarblocksObject = array => {
+    return array.reduce((obj,starblock) => ({
+        ...obj,
+        [starblock.id]:starblock
+    }),{})
+}
+  export default starblocks;
   

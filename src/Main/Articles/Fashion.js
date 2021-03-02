@@ -9,7 +9,7 @@ const News = () => {
       <div className="fashion-block">
         {fashions.map(({ id, text, image }) => (
           <div className="block-f-1" key={id}>
-            <FashionArticleItem text={text} image={image} />
+            <FashionArticleItem id ={id} text={text} image={image} />
           </div>
         ))}
       </div>

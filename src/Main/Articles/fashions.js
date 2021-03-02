@@ -29,6 +29,12 @@ const fashions = [
       fullDescription:""
     }
 ];
+  export const getFashionsObject = array => {
+    return array.reduce((obj,fashion) => ({
+        ...obj,
+        [fashion.id]:fashion
+    }),{})
+  }
 
 export default fashions;
   

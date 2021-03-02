@@ -10,7 +10,7 @@ const Top = () => {
         <div class="item-news">            
           {tops.map(({ id, image, title, className }) => (            
               <div className={className} key={id}>
-                <TopArticleItem image={image} title={title} />
+                <TopArticleItem id ={id} image={image} title={title} />
               </div>            
           ))}
           

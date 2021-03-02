@@ -12,6 +12,8 @@ import LifestylePage from "./LifeStylePage/LifeStylePage"
 import BeauttyPage from "./BeautyPage/BeautyPage"
 import ExclusivePage from "./ExclusivePage/ExclusivePage"
 import { StarsPage } from './StarsPage/StarsPage';
+import {PopularPage} from './PopularPage/PopularPage';
+import {OnlyVoguePage} from './OnlyVoguePage/OnlyVoguePage'
 
 const Main = () => {
   return (
@@ -30,7 +32,9 @@ const Main = () => {
             <Route path="/lifestyle" component={LifestylePage}/>
             <Route path="/beauty" component={BeauttyPage}/>
             <Route path="/exclusive" component={ExclusivePage}/>
-            <Route path="/starsblock/:id" component={StarsPage}/>
+            <Route path="/starblocks/:id" component={StarsPage}/>
+            <Route path="/tops/:id" component={PopularPage}/>
+            <Route path="/fashions/:id" component={OnlyVoguePage}/>
           </div>
           <div className="slider-block">
             <div className="slider">

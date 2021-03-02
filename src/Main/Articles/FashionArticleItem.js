@@ -1,15 +1,16 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
-const FashionsArticleItem = ({ image, text }) => {
+const FashionArticleItem = ({ id, image, text }) => {
   return (
     <>
       <a href="/" >
         <img className="fashion-photo" src={image} alt="" width="100%" height="100%" />
       </a>
-      <a href="/" className="fashion-text">
+      <Link to={`/fashions/${id}`} className="fashion-text">
         {text}
-      </a>
+      </Link>
     </>
   );
 };
-export default FashionsArticleItem;
+export default FashionArticleItem;
