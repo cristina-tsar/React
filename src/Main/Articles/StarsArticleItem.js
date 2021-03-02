@@ -2,7 +2,7 @@ import React from "react";
 
 const StarsArticleItem = ({ name, information, image, btnlearn }) => {
   return (
-    <div className="star-blocks-1">
+    <>
       <div className="photo-star">
         <img src={image} alt="" width="100%" height="100%" />
       </div>
@@ -15,7 +15,7 @@ const StarsArticleItem = ({ name, information, image, btnlearn }) => {
           <img src={btnlearn} alt="" />
         </a>
       </div>
-    </div>
+    </>
   );
 };
 

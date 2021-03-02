@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TopArticleItem from '../Articles/FashionArticleItem'
+import TopArticleItem from '../Articles/TopArticleItem'
 import tops from '../Articles/tops'
 
 const ExclusivePage = () => {

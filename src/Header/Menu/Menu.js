@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 
 
 const Menu = () => {
     return (
       <div className="menu">
-        <nav>
+        <nav className='navigation hidden-menu'>
           <Link to="/">HOME</Link>
           <Link to="/fashion">FASHION</Link>
           <Link to="/news">NEWS</Link>
@@ -20,9 +20,15 @@ const Menu = () => {
             EXCLUSIVE
           </Link>
         </nav>
+        <div className='mobile-menu'>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     );
 }
+    
 
 export default Menu
   

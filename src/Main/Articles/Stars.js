@@ -6,7 +6,7 @@ const Stars = () => {
   return (
     <div className="stars-block">
       {starsblock.map(({ id, name, information, image, btnlearn }) => (
-        <div className="star-blocks" key={id}>
+        <div className="star-blocks-1" key={id}>
           <StarsArticleItem
             name={name}
             information={information}
