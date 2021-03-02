@@ -1,8 +1,6 @@
 import React from 'react'
 import FashionArticleItem from '../Articles/FashionArticleItem'
 import fashions from '../Articles/fashions';
-import StarsArticleItem from '../Articles/StarsArticleItem'
-import starsblock from '../Articles/starsblock';
 import TopArticleItem from '../Articles/TopArticleItem'
 import tops from '../Articles/tops'
 

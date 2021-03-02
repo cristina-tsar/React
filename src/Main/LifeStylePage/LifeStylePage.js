@@ -1,8 +1,6 @@
 import React from 'react'
 import FashionArticleItem from '../Articles/FashionArticleItem'
 import fashions from '../Articles/fashions';
-import StarsArticleItem from '../Articles/StarsArticleItem'
-import starsblock from '../Articles/starsblock';
 import TopArticleItem from '../Articles/TopArticleItem'
 import tops from '../Articles/tops'
 
@@ -22,17 +20,6 @@ const LifeStylePage = () => {
                         <FashionArticleItem text={text} image={image} />
                     </div>
                 ))} 
-               
-                {starsblock.filter(item => item.category==='lifestyle').map(({ id, name, information, image, btnlearn }) => (
-                    <div className="star-blocks-1" key={id}>
-                        <StarsArticleItem
-                            name={name}
-                            information={information}
-                            image={image}
-                            btnlearn={btnlearn}
-                        />
-                    </div>
-                ))}
             </div>
         </>
         
