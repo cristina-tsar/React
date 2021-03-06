@@ -7,6 +7,7 @@ import tops from '../Articles/tops';
 
 
 const BeautyPage = () => {
+    
     return (
         <>
             <h1>...BEAUTY...</h1>

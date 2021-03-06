@@ -3,9 +3,8 @@ import fashions, {getFashionsObject} from '../Articles/fashions'
 
 export const OnlyVoguePage = ({
     match,
-    fashionsObject= getFashionsObject(fashions)
+    fashionsObject= getFashionsObject(fashions),   
 }) => {
-   console.log(match)
    const id = match.params.id;
     return (
         <>
