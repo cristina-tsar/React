@@ -10,6 +10,7 @@ export const StarsPage = ({
     return (
         <>
             <h1>{starblocksObject[id].name}</h1>
+            <p dangerouslySetInnerHTML={{__html:starblocksObject[id].fullDescription}}></p>
         </>
     )
 }

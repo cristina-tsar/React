@@ -5,7 +5,9 @@ const TopArticleItem = ({id, image, title, className }) => {
   return (
     <>
       <div className={className}>
-        <img src={image} alt="" width="100%" height="100%"/>
+        <Link to={`/tops/${id}`} >
+          <img src={image} alt="" width="100%" height="100%"/>
+        </Link>
       </div>
       <Link to={`/tops/${id}`} className="title">{title}</Link>
     </>

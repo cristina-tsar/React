@@ -10,6 +10,7 @@ export const OnlyVoguePage = ({
     return (
         <>
             <h1>{fashionsObject[id].text}</h1>
+            <p dangerouslySetInnerHTML={{__html:fashionsObject[id].fullDescription}}></p>
         </>
     )
 }

@@ -10,6 +10,7 @@ export const PopularPage = ({
     return (
         <>
             <h1>{topsObject[id].title}</h1>
+            <p dangerouslySetInnerHTML={{__html:topsObject[id].fullDescription}}></p>
         </>
     )
 }

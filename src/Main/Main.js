@@ -14,6 +14,7 @@ import ExclusivePage from "./ExclusivePage/ExclusivePage"
 import { StarsPage } from './StarsPage/StarsPage';
 import {PopularPage} from './PopularPage/PopularPage';
 import {OnlyVoguePage} from './OnlyVoguePage/OnlyVoguePage'
+import { Testimonials } from '../Components/Testimonials/Testimonials';
 
 const Main = () => {
   return (
@@ -35,6 +36,7 @@ const Main = () => {
             <Route path="/starblocks/:id" component={StarsPage}/>
             <Route path="/tops/:id" component={PopularPage}/>
             <Route path="/fashions/:id" component={OnlyVoguePage}/>
+            
           </div>
           <div className="slider-block">
             <div className="slider">
@@ -65,6 +67,14 @@ const Main = () => {
           </div>
           <div className="news">
             <Fashion/>
+            <Route path="/fashion" component={Testimonials}/>
+            <Route path="/news" component={Testimonials}/>
+            <Route path="/lifestyle" component={Testimonials}/>
+            <Route path="/top" component={Testimonials}/>
+            <Route path="/beauty" component={Testimonials}/>
+          </div>
+          <div className="comment">
+            <Route path="/" exact component={Testimonials}/>
           </div>
         </div>
       </div>
